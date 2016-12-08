@@ -14,5 +14,9 @@ class XJHomeViewModel {
 
 
 extension XJHomeViewModel {
-    
+    func loadData(_ finishedCallBack : @escaping() -> ()) {
+        XJNetworkTool.requestData(.get, urlString: kApiHomeList) { (result) in
+            
+        }
+    }
 }

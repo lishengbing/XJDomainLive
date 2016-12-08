@@ -12,6 +12,7 @@ private let kCellID = "kCellID"
 class XJLiveListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    fileprivate lazy var homeVM : XJHomeViewModel = XJHomeViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
