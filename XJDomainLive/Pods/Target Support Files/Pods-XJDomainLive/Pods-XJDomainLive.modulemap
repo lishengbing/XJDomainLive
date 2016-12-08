@@ -1,0 +1,6 @@
+framework module Pods_XJDomainLive {
+  umbrella header "Pods-XJDomainLive-umbrella.h"
+
+  export *
+  module * { export * }
+}
