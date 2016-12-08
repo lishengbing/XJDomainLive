@@ -16,16 +16,23 @@ class XJListTableViewCell: UITableViewCell {
     @IBOutlet weak var labelNums: UILabel!
     @IBOutlet weak var cityLabel: UILabel!
     
+    
+    var anchorModel : HomeModel? {
+        didSet {
+            guard let anchorModel = anchorModel else {
+                return
+            }
+            
+            labelNums.text = "\(anchorModel.online_users)人在看"
+            cityLabel.text = anchorModel.city
+        }
+    }
+    
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+        
     }
     
 }

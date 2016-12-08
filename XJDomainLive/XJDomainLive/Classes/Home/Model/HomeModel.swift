@@ -8,12 +8,12 @@
 
 import UIKit
 
-class HomeMode: NSObject {
+class HomeModel: NSObject {
 
     /// 直播视频流
     var shareAddr : String?
     /* 关注人 */
-    var onlineUsers : Int = -1
+    var online_users : Int = 0
     /* 城市 */
     var city : String?
     /* 主播 */

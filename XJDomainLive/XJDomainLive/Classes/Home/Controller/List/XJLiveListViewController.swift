@@ -33,7 +33,7 @@ extension XJLiveListViewController {
 extension XJLiveListViewController {
     fileprivate func loadHomeData() {
         homeVM.loadData { 
-            
+            self.tableView.reloadData()
         }
     }
 }
@@ -41,12 +41,13 @@ extension XJLiveListViewController {
 
 extension XJLiveListViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 110
+        return homeVM.anchors.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: kCellID, for: indexPath) as! XJListTableViewCell
         cell.backgroundColor = UIColor(red: (CGFloat(arc4random_uniform(255)) / 255.0), green: (CGFloat(arc4random_uniform(255)) / 255.0), blue: (CGFloat(arc4random_uniform(255)) / 255.0), alpha: 1)
+        cell.anchorModel = homeVM.anchors[indexPath.row]
         return cell
     }
     
@@ -54,9 +55,7 @@ extension XJLiveListViewController : UITableViewDelegate, UITableViewDataSource 
         cell.layer.transform = CATransform3DMakeScale(0.5, 0.5, 1)
         UIView.animate(withDuration: 0.5, delay: 0.2, options: [], animations: {
             cell.layer.transform = CATransform3DMakeScale(1, 1, 1)
-        }, completion: { (_) in
-            
-        })
+        }, completion: { (_) in })
     }
 }
 
