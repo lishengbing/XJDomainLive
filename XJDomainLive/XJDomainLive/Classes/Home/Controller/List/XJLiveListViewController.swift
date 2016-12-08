@@ -16,6 +16,7 @@ class XJLiveListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        loadHomeData()
     }
 
 }
@@ -25,6 +26,15 @@ extension XJLiveListViewController {
     fileprivate func setupUI() {
         navigationItem.title = "直播列表"
         tableView.register(UINib(nibName: "XJListTableViewCell", bundle: nil), forCellReuseIdentifier: kCellID)
+    }
+}
+
+
+extension XJLiveListViewController {
+    fileprivate func loadHomeData() {
+        homeVM.loadData { 
+            
+        }
     }
 }
 

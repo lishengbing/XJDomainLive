@@ -21,6 +21,7 @@
 		A3D169931DF967DF00FD6CAD /* XJNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D169921DF967DF00FD6CAD /* XJNetworkTool.swift */; };
 		A3D169951DF96BA600FD6CAD /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D169941DF96BA600FD6CAD /* Common.swift */; };
 		A3D169971DF96BC900FD6CAD /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D169961DF96BC900FD6CAD /* API.swift */; };
+		A3D1699A1DF9731900FD6CAD /* HomeMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D169991DF9731900FD6CAD /* HomeMode.swift */; };
 		B79E0140832F2B3CF71CE07C /* Pods_XJDomainLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3281EC136D80D9333E24477A /* Pods_XJDomainLive.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		A3D169921DF967DF00FD6CAD /* XJNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XJNetworkTool.swift; sourceTree = "<group>"; };
 		A3D169941DF96BA600FD6CAD /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		A3D169961DF96BC900FD6CAD /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		A3D169991DF9731900FD6CAD /* HomeMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeMode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				A3075D651DF954D5002BEA19 /* Controller */,
 				A3D1698E1DF9605700FD6CAD /* ViewModel */,
 				A3075D871DF95927002BEA19 /* View */,
+				A3D169981DF972FD00FD6CAD /* Model */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -200,6 +203,14 @@
 				A3D169961DF96BC900FD6CAD /* API.swift */,
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		A3D169981DF972FD00FD6CAD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A3D169991DF9731900FD6CAD /* HomeMode.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		F5C73675581F96DE77668FD0 /* Pods */ = {
@@ -346,6 +357,7 @@
 				A3075D831DF958F9002BEA19 /* XJLiveListViewController.swift in Sources */,
 				A3D169971DF96BC900FD6CAD /* API.swift in Sources */,
 				A3075D6C1DF954D5002BEA19 /* AppDelegate.swift in Sources */,
+				A3D1699A1DF9731900FD6CAD /* HomeMode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
