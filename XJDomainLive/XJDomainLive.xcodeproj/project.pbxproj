@@ -603,6 +603,7 @@
 					"$(PROJECT_DIR)/XJDomainLive/Classes/Other",
 				);
 				INFOPLIST_FILE = XJDomainLive/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRELINK_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xj520.XJDomainLive;
@@ -622,6 +623,7 @@
 					"$(PROJECT_DIR)/XJDomainLive/Classes/Other",
 				);
 				INFOPLIST_FILE = XJDomainLive/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRELINK_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xj520.XJDomainLive;

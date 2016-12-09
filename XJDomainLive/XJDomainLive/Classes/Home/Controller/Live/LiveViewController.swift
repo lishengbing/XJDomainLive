@@ -24,16 +24,23 @@ class LiveViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         XJAnimationTool.share.showAnimation(view: self.view)
+        
+        /*
+         IJKMPMoviePlayerLoadStateDidChangeNotification(加载状态改变通知)
+         IJKMPMoviePlayerPlaybackDidFinishNotification(播放结束通知)
+         IJKMPMoviePlayerPlaybackStateDidChangeNotification(播放状态改变通知)
+         */
+        NotificationCenter.default.addObserver(self, selector: #selector(playbackStateDidChange(noti:)), name: NSNotification.Name.IJKMPMoviePlayerPlaybackStateDidChange, object: nil)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-            XJAnimationTool.share.dismissAnimation {
-            }
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(true)
+        NotificationCenter.default.removeObserver(self)
         
         /* 释放 */
         if	ijkLivePlay != nil {
@@ -59,5 +66,24 @@ extension LiveViewController {
 extension LiveViewController {
     @IBAction func backClick() {
        dismiss(animated: true, completion: nil)
+    }
+    
+    @objc fileprivate func playbackStateDidChange(noti : Notification) {
+        switch (self.ijkLivePlay.playbackState) {
+        case .stopped:
+            print("停止")
+        case .playing:
+            print("正在播放")
+            XJAnimationTool.share.dismissAnimation({})
+        case .paused:
+            print("暂停")
+        case .interrupted:
+            print("打断")
+        case .seekingForward:
+            print("快进")
+        case .seekingBackward:
+            print("快退")
+        default: break 
+        }
     }
 }
