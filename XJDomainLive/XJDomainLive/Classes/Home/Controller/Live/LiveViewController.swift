@@ -28,8 +28,8 @@ class LiveViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        XJAnimationTool.share.dismissAnimation {
-        }
+            XJAnimationTool.share.dismissAnimation {
+            }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
