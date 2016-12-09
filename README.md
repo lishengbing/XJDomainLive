@@ -14,9 +14,11 @@ https://github.com/lishengbing/XJDomainLive
 
 
 ## LIVE
-![XJDmain](https://github.com/lishengbing/XJDomainLive/blob/master/XJDomainLive/XJDomainLive/Classes/Resource/c1.gif) | ![XJDmain](https://github.com/lishengbing/XJDomainLive/blob/master/XJDomainLive/XJDomainLive/Classes/Resource/c2.gif) | ![XJDmain](https://github.com/lishengbing/XJDomainLive/blob/master/XJDomainLive/XJDomainLive/Classes/Resource/c3.gif) 
+![XJDmain](https://github.com/lishengbing/XJDomainLive/blob/master/XJDomainLive/XJDomainLive/Classes/Resource/c1.gif) | ![XJDmain](https://github.com/lishengbing/XJDomainLive/blob/master/XJDomainLive/XJDomainLive/Classes/Resource/c2.gif) 
 
-![XJDmain](https://github.com/lishengbing/XJDomainLive/blob/master/XJDomainLive/XJDomainLive/Classes/Resource/b5.gif) | ![XJDmain](https://github.com/lishengbing/XJDomainLive/blob/master/XJDomainLive/XJDomainLive/Classes/Resource/b4.gif) | ![XJDmain](https://github.com/lishengbing/XJDomainLive/blob/master/XJDomainLive/XJDomainLive/Classes/Resource/b3.gif)
+![XJDmain](https://github.com/lishengbing/XJDomainLive/blob/master/XJDomainLive/XJDomainLive/Classes/Resource/c3.gif) | ![XJDmain](https://github.com/lishengbing/XJDomainLive/blob/master/XJDomainLive/XJDomainLive/Classes/Resource/b5.gif)
+
+![XJDmain](https://github.com/lishengbing/XJDomainLive/blob/master/XJDomainLive/XJDomainLive/Classes/Resource/b4.gif) | ![XJDmain](https://github.com/lishengbing/XJDomainLive/blob/master/XJDomainLive/XJDomainLive/Classes/Resource/b3.gif)
 
 ![XJDmain](https://github.com/lishengbing/XJDomainLive/blob/master/XJDomainLive/XJDomainLive/Classes/Resource/b2.gif) | ![XJDmain](https://github.com/lishengbing/XJDomainLive/blob/master/XJDomainLive/XJDomainLive/Classes/Resource/b1.gif)
 
