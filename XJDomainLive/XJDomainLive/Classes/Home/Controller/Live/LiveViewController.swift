@@ -41,6 +41,8 @@ class LiveViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(true)
         NotificationCenter.default.removeObserver(self)
+        XJAnimationTool.share.dismissAnimation({})
+        
         
         /* 释放 */
         if	ijkLivePlay != nil {
