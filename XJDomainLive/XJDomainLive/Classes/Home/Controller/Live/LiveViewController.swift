@@ -85,7 +85,6 @@ extension LiveViewController {
             print("快进")
         case .seekingBackward:
             print("快退")
-        default: break 
         }
     }
 }
