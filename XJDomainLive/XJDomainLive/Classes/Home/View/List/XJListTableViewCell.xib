@@ -15,13 +15,13 @@
             <rect key="frame" x="0.0" y="0.0" width="353" height="378"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="353" height="377.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="353" height="377"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pbo-ym-TGb">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pbo-ym-TGb" userLabel=" 头部">
                         <rect key="frame" x="0.0" y="0.0" width="353" height="70"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_default" translatesAutoresizingMaskIntoConstraints="NO" id="KYh-4v-UB5">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_default" translatesAutoresizingMaskIntoConstraints="NO" id="KYh-4v-UB5">
                                 <rect key="frame" x="8" y="8" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Jv4-hn-OkJ"/>
@@ -78,13 +78,13 @@
                         </constraints>
                     </view>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ozI-U1-JPi">
-                        <rect key="frame" x="0.0" y="70" width="353" height="292"/>
+                        <rect key="frame" x="0.0" y="85" width="353" height="277"/>
                     </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="ozI-U1-JPi" secondAttribute="bottom" constant="15" id="1aV-B2-CP8"/>
-                    <constraint firstItem="ozI-U1-JPi" firstAttribute="top" secondItem="Pbo-ym-TGb" secondAttribute="bottom" id="93g-7f-fxp"/>
+                    <constraint firstAttribute="bottom" secondItem="ozI-U1-JPi" secondAttribute="bottom" constant="15" id="LEM-QF-uFP"/>
                     <constraint firstAttribute="trailing" secondItem="ozI-U1-JPi" secondAttribute="trailing" id="Q5T-Mp-AqX"/>
+                    <constraint firstItem="ozI-U1-JPi" firstAttribute="top" secondItem="Pbo-ym-TGb" secondAttribute="bottom" constant="15" id="RW7-JV-EIS"/>
                     <constraint firstItem="Pbo-ym-TGb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="bPL-km-5tr"/>
                     <constraint firstItem="Pbo-ym-TGb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="q57-E4-P8K"/>
                     <constraint firstAttribute="trailing" secondItem="Pbo-ym-TGb" secondAttribute="trailing" id="uPv-qR-ijV"/>
