@@ -1,5 +1,5 @@
 # XJDomainLive
-# 直播APP_XJLive
+# 直播APP_XJLive (斗鱼 + 映客 + 喵播)++ 
 - 🔍 An NB Live APP for iOS.
 
 ## 点击star
