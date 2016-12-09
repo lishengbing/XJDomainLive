@@ -13,11 +13,13 @@
 		A3075D6D1DF954D5002BEA19 /* XJTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3075D6A1DF954D5002BEA19 /* XJTabBarController.swift */; };
 		A3075D831DF958F9002BEA19 /* XJLiveListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3075D7E1DF958F9002BEA19 /* XJLiveListViewController.swift */; };
 		A3075D841DF958F9002BEA19 /* XJLiveListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3075D7F1DF958F9002BEA19 /* XJLiveListViewController.xib */; };
-		A3075D851DF958F9002BEA19 /* XJPrepareLiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3075D811DF958F9002BEA19 /* XJPrepareLiveViewController.swift */; };
-		A3075D861DF958F9002BEA19 /* XJPrepareLiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3075D821DF958F9002BEA19 /* XJPrepareLiveViewController.xib */; };
 		A3075D8C1DF9594A002BEA19 /* XJListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3075D8A1DF9594A002BEA19 /* XJListTableViewCell.swift */; };
 		A3075D8D1DF9594A002BEA19 /* XJListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3075D8B1DF9594A002BEA19 /* XJListTableViewCell.xib */; };
 		A307A12D1DFA5D4F009A375F /* XJAnimationTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A307A12C1DFA5D4F009A375F /* XJAnimationTool.swift */; };
+		A307A1311DFA7CD3009A375F /* XJPrepareLiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A307A12F1DFA7CD3009A375F /* XJPrepareLiveViewController.swift */; };
+		A307A1321DFA7CD3009A375F /* XJPrepareLiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A307A1301DFA7CD3009A375F /* XJPrepareLiveViewController.xib */; };
+		A307A1361DFA7D00009A375F /* XJLiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A307A1341DFA7D00009A375F /* XJLiveViewController.swift */; };
+		A307A1371DFA7D00009A375F /* XJLiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A307A1351DFA7D00009A375F /* XJLiveViewController.xib */; };
 		A3D169901DF9606A00FD6CAD /* XJHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D1698F1DF9606A00FD6CAD /* XJHomeViewModel.swift */; };
 		A3D169931DF967DF00FD6CAD /* XJNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D169921DF967DF00FD6CAD /* XJNetworkTool.swift */; };
 		A3D169951DF96BA600FD6CAD /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D169941DF96BA600FD6CAD /* Common.swift */; };
@@ -38,11 +40,13 @@
 		A3075D711DF9554A002BEA19 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3075D7E1DF958F9002BEA19 /* XJLiveListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XJLiveListViewController.swift; sourceTree = "<group>"; };
 		A3075D7F1DF958F9002BEA19 /* XJLiveListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XJLiveListViewController.xib; sourceTree = "<group>"; };
-		A3075D811DF958F9002BEA19 /* XJPrepareLiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XJPrepareLiveViewController.swift; sourceTree = "<group>"; };
-		A3075D821DF958F9002BEA19 /* XJPrepareLiveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XJPrepareLiveViewController.xib; sourceTree = "<group>"; };
 		A3075D8A1DF9594A002BEA19 /* XJListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XJListTableViewCell.swift; sourceTree = "<group>"; };
 		A3075D8B1DF9594A002BEA19 /* XJListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XJListTableViewCell.xib; sourceTree = "<group>"; };
 		A307A12C1DFA5D4F009A375F /* XJAnimationTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XJAnimationTool.swift; sourceTree = "<group>"; };
+		A307A12F1DFA7CD3009A375F /* XJPrepareLiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XJPrepareLiveViewController.swift; sourceTree = "<group>"; };
+		A307A1301DFA7CD3009A375F /* XJPrepareLiveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XJPrepareLiveViewController.xib; sourceTree = "<group>"; };
+		A307A1341DFA7D00009A375F /* XJLiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XJLiveViewController.swift; sourceTree = "<group>"; };
+		A307A1351DFA7D00009A375F /* XJLiveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XJLiveViewController.xib; sourceTree = "<group>"; };
 		A3D1698F1DF9606A00FD6CAD /* XJHomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XJHomeViewModel.swift; sourceTree = "<group>"; };
 		A3D169921DF967DF00FD6CAD /* XJNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XJNetworkTool.swift; sourceTree = "<group>"; };
 		A3D169941DF96BA600FD6CAD /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
@@ -123,6 +127,7 @@
 		A3075D651DF954D5002BEA19 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A307A12E1DFA7CD3009A375F /* Capture */,
 				A3075D7D1DF958F9002BEA19 /* List */,
 				A3075D801DF958F9002BEA19 /* Live */,
 			);
@@ -158,8 +163,8 @@
 		A3075D801DF958F9002BEA19 /* Live */ = {
 			isa = PBXGroup;
 			children = (
-				A3075D811DF958F9002BEA19 /* XJPrepareLiveViewController.swift */,
-				A3075D821DF958F9002BEA19 /* XJPrepareLiveViewController.xib */,
+				A307A1341DFA7D00009A375F /* XJLiveViewController.swift */,
+				A307A1351DFA7D00009A375F /* XJLiveViewController.xib */,
 			);
 			path = Live;
 			sourceTree = "<group>";
@@ -167,6 +172,7 @@
 		A3075D871DF95927002BEA19 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A307A1331DFA7CDA009A375F /* Capture */,
 				A3075D881DF95927002BEA19 /* List */,
 				A3075D891DF95927002BEA19 /* Live */,
 			);
@@ -187,6 +193,22 @@
 			children = (
 			);
 			path = Live;
+			sourceTree = "<group>";
+		};
+		A307A12E1DFA7CD3009A375F /* Capture */ = {
+			isa = PBXGroup;
+			children = (
+				A307A12F1DFA7CD3009A375F /* XJPrepareLiveViewController.swift */,
+				A307A1301DFA7CD3009A375F /* XJPrepareLiveViewController.xib */,
+			);
+			path = Capture;
+			sourceTree = "<group>";
+		};
+		A307A1331DFA7CDA009A375F /* Capture */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Capture;
 			sourceTree = "<group>";
 		};
 		A3D1698E1DF9605700FD6CAD /* ViewModel */ = {
@@ -288,8 +310,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3075D861DF958F9002BEA19 /* XJPrepareLiveViewController.xib in Resources */,
+				A307A1321DFA7CD3009A375F /* XJPrepareLiveViewController.xib in Resources */,
 				A3075D841DF958F9002BEA19 /* XJLiveListViewController.xib in Resources */,
+				A307A1371DFA7D00009A375F /* XJLiveViewController.xib in Resources */,
 				A3075D571DF95336002BEA19 /* Assets.xcassets in Resources */,
 				A3075D551DF95336002BEA19 /* Main.storyboard in Resources */,
 				A3075D8D1DF9594A002BEA19 /* XJListTableViewCell.xib in Resources */,
@@ -352,7 +375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3D169951DF96BA600FD6CAD /* Common.swift in Sources */,
-				A3075D851DF958F9002BEA19 /* XJPrepareLiveViewController.swift in Sources */,
+				A307A1311DFA7CD3009A375F /* XJPrepareLiveViewController.swift in Sources */,
 				A3075D6D1DF954D5002BEA19 /* XJTabBarController.swift in Sources */,
 				A3075D8C1DF9594A002BEA19 /* XJListTableViewCell.swift in Sources */,
 				A3D169901DF9606A00FD6CAD /* XJHomeViewModel.swift in Sources */,
@@ -361,6 +384,7 @@
 				A3075D831DF958F9002BEA19 /* XJLiveListViewController.swift in Sources */,
 				A3D169971DF96BC900FD6CAD /* API.swift in Sources */,
 				A3075D6C1DF954D5002BEA19 /* AppDelegate.swift in Sources */,
+				A307A1361DFA7D00009A375F /* XJLiveViewController.swift in Sources */,
 				A3D1699A1DF9731900FD6CAD /* HomeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

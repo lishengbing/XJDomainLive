@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XJLiveListViewController" customModule="XJDomainLive" customModuleProvider="target">
             <connections>
-                <outlet property="tableView" destination="LHV-pD-PdE" id="0oe-vF-Ybk"/>
+                <outlet property="tableView" destination="0ET-Wz-MSh" id="2WU-T4-s3g"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,22 +20,21 @@
             <rect key="frame" x="0.0" y="0.0" width="234" height="313"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="430" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LHV-pD-PdE">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="430" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0ET-Wz-MSh">
                     <rect key="frame" x="0.0" y="0.0" width="234" height="313"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     <connections>
-                        <outlet property="dataSource" destination="-1" id="TvM-zV-TxO"/>
-                        <outlet property="delegate" destination="-1" id="cf9-5b-e2F"/>
+                        <outlet property="dataSource" destination="-1" id="h6V-QY-94z"/>
+                        <outlet property="delegate" destination="-1" id="K6R-a4-kje"/>
                     </connections>
                 </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="LHV-pD-PdE" secondAttribute="bottom" id="0Wf-Qj-Mzk"/>
-                <constraint firstItem="LHV-pD-PdE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Sj7-cK-nw5"/>
-                <constraint firstAttribute="trailing" secondItem="LHV-pD-PdE" secondAttribute="trailing" id="Xi4-Lc-Qdg"/>
-                <constraint firstItem="LHV-pD-PdE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="f4l-6e-cgR"/>
+                <constraint firstItem="0ET-Wz-MSh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QCZ-hO-RCf"/>
+                <constraint firstAttribute="trailing" secondItem="0ET-Wz-MSh" secondAttribute="trailing" id="Sas-SI-KQS"/>
+                <constraint firstAttribute="bottom" secondItem="0ET-Wz-MSh" secondAttribute="bottom" id="oUR-wG-mHO"/>
+                <constraint firstItem="0ET-Wz-MSh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="rsy-SM-mSX"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="-16" y="-86.5"/>

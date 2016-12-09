@@ -33,11 +33,13 @@ extension XJAnimationTool {
         imageView.startAnimating()
     }
     
-    func dismissAnimation() {
+    func dismissAnimation(_ finished : @escaping () -> ()) {
         // 1.停止动画
         imageView.stopAnimating()
         
         // 2.隐藏animationImageView
         imageView.isHidden = true
+        
+        finished()
     }
 }
