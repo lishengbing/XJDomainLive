@@ -52,9 +52,13 @@ extension XJLiveListViewController : UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        cell.layer.transform = CATransform3DMakeScale(0.5, 0.5, 1)
+        //cell.layer.transform = CATransform3DMakeScale(0.5, 0.5, 1)
         UIView.animate(withDuration: 0.5, delay: 0.2, options: [], animations: {
-            cell.layer.transform = CATransform3DMakeScale(1, 1, 1)
+            //cell.layer.transform = CATransform3DMakeScale(1, 1, 1)
+            let anim = CATransition()
+            anim.type = "rippleEffect"
+            anim.duration = 1
+            cell.layer.add(anim, forKey: "11")
         }, completion: { (_) in })
     }
 }

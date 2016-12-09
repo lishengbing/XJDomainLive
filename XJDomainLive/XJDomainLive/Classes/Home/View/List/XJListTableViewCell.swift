@@ -28,10 +28,22 @@ class XJListTableViewCell: UITableViewCell {
             cityLabel.text = anchorModel.city
             name.text = anchorModel.userInfo?.nick
             
+            
+            // http://img2.inke.cn/MTQ4MTIzNjQ4ODM2MSM5MzYjanBn.jpg
+            // MTQ3OTgxMTYwMDc0MyMxMjgjanBn.jpg
             // 头像&&封面
-            if let url = URL(string: anchorModel.userInfo?.portrait ?? "") {
-                avator.kf.setImage(with: url)
-                imageV.kf.setImage(with: url)
+            var imageUrl = anchorModel.userInfo?.portrait
+            // 处理图片地址
+            if imageUrl?.hasPrefix("http://img2.inke.cn/") == false {
+                imageUrl = "http://img2.inke.cn/" + (anchorModel.userInfo?.portrait)!
+            }
+            
+            if let url = URL(string: imageUrl ?? "") {
+                avator.kf.setImage(with: url, placeholder: UIImage(named: "avatar_default"))
+                imageV.kf.setImage(with: url, placeholder: UIImage(named: "avatar_default"))
+            }else {
+                avator.image = UIImage(named: "avatar_default")
+                imageV.image = UIImage(named: "avatar_default")
             }
         }
     }

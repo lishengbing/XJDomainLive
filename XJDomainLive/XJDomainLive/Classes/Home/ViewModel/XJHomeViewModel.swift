@@ -27,7 +27,6 @@ extension XJHomeViewModel {
                     print(dict)
                 }
             }
-            
             print(self.anchors.count)
             finishedCallBack()
         }
