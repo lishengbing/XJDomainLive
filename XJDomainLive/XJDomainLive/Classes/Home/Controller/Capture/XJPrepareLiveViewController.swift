@@ -14,6 +14,4 @@ class XJPrepareLiveViewController: UIViewController {
         super.viewDidLoad()
         navigationItem.title = "后期更新中、记得star哦......"
     }
-
-    
 }

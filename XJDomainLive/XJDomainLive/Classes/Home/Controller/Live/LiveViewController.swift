@@ -35,7 +35,7 @@ class LiveViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
+        self.ijkLivePlay.prepareToPlay()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -57,11 +57,34 @@ extension LiveViewController {
     fileprivate func setupUI() {
         self.view.backgroundColor = UIColor.white
         let requestUrl = URL(string: self.anchorModel.stream_addr ?? "")
-        self.ijkLivePlay = IJKFFMoviePlayerController(contentURL: requestUrl, with: nil)
-        self.ijkLivePlay.view.frame = UIScreen.main.bounds
+        
+        // 00设置不报告日志
+        //IJKFFMoviePlayerController.setLogReport(false)
+        //IJKFFMoviePlayerController.setLogLevel(k_IJK_LOG_INFO)
+        
+        // 01默认选项配置
+        let options = IJKFFOptions.byDefault()
+        
+        // 0.创建播放控制器
+        ijkLivePlay = IJKFFMoviePlayerController(contentURL: requestUrl, with: options!)
+        
+        // 1.设置frame为整个屏幕
+        ijkLivePlay.view.frame = UIScreen.main.bounds
+        
+        // 2.设置适配横竖屏幕(设置四边固定，长度灵活)
+        ijkLivePlay.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        
+        // 3.设置播放视图的缩放模式
+        ijkLivePlay.scalingMode = .aspectFill
+        
+        // 4.设置自动播放
+        ijkLivePlay.shouldAutoplay = true
+        
+        // 5.自动更新子视图的大小
+        self.view.autoresizesSubviews = true
+        
         self.view.addSubview(self.ijkLivePlay.view)
         self.view.insertSubview(self.btn, aboveSubview: self.ijkLivePlay.view)
-        self.ijkLivePlay.prepareToPlay()
     }
 }
 
