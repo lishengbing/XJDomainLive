@@ -15,9 +15,18 @@ class HomeModel: NSObject {
     /* 关注人 */
     var online_users : Int = 0
     /* 城市 */
-    var city : String?
+    var city : String? 
     /* 主播 */
-    var creator : UserModel?
+    var creator : [String : Any]? {
+        didSet {
+            guard let creator = creator else { return }
+            userInfo = UserModel(Dict: creator)
+        }
+    }
+    
+    // 主播信息
+    var userInfo : UserModel?
+    
     
     // 自定义构造函数
     init(dict: [String : Any]) {

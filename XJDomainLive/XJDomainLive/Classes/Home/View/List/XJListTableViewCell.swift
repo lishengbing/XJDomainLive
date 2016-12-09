@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class XJListTableViewCell: UITableViewCell {
     
@@ -25,10 +26,15 @@ class XJListTableViewCell: UITableViewCell {
             
             labelNums.text = "\(anchorModel.online_users)人在看"
             cityLabel.text = anchorModel.city
+            name.text = anchorModel.userInfo?.nick
+            
+            // 头像&&封面
+            if let url = URL(string: anchorModel.userInfo?.portrait ?? "") {
+                avator.kf.setImage(with: url)
+                imageV.kf.setImage(with: url)
+            }
         }
     }
-    
-    
 
     override func awakeFromNib() {
         super.awakeFromNib()

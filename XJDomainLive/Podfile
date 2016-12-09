@@ -8,4 +8,5 @@ target 'XJDomainLive' do
 pod 'LFLiveKit', '~> 2.5'
 pod 'Alamofire', '~> 4.1.0'
 pod 'SwiftyJSON', '~> 3.1.1'
+pod 'Kingfisher', '~> 3.2.1'
 end

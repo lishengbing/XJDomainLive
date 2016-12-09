@@ -77,7 +77,7 @@
                             <constraint firstItem="Bbs-1J-6Gc" firstAttribute="top" secondItem="KYh-4v-UB5" secondAttribute="top" id="zsR-kS-XNi"/>
                         </constraints>
                     </view>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ozI-U1-JPi">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="me_new_icon_live" translatesAutoresizingMaskIntoConstraints="NO" id="ozI-U1-JPi">
                         <rect key="frame" x="0.0" y="85" width="353" height="277"/>
                     </imageView>
                 </subviews>
@@ -103,5 +103,6 @@
     </objects>
     <resources>
         <image name="avatar_default" width="50" height="50"/>
+        <image name="me_new_icon_live" width="31" height="31"/>
     </resources>
 </document>
