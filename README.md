@@ -1,5 +1,5 @@
 # XJDomainLive
-直播XJLive
+# 直播APP_XJLive
 
 ## 谢谢大家star、后期更新通知到大家
 
