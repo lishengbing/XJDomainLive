@@ -1,7 +1,9 @@
 # XJDomainLive
 # 直播APP_XJLive
 - 🔍 An NB Live APP for iOS.
-## 谢谢大家star、后期更新通知到大家
+
+## 点击star
+可以star一下、后期持续更新通知到大家，一起解直播
 
 
 ## 使用说明
