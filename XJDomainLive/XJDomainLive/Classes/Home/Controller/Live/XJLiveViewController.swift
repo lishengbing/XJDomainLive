@@ -10,7 +10,7 @@ import UIKit
 
 class XJLiveViewController: UIViewController {
     
-    var anchorModel : XJHomeViewModel?
+    //var anchorModel : XJHomeViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()

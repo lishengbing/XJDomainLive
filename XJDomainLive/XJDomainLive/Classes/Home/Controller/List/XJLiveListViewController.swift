@@ -67,10 +67,17 @@ extension XJLiveListViewController : UITableViewDelegate, UITableViewDataSource 
         })
     }
     
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//       print("bbbb")
+//        let vc = XJLiveViewController()
+//        //self.present(vc, animated: true, completion: nil)
+//        //navigationController?.pushViewController(vc, animated: true)
+//        self.navigationController?.present(vc, animated: true, completion: nil)
+//    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-       print("bbbb")
         let vc = XJLiveViewController()
-        self.present(vc, animated: true, completion: nil)
+        present(vc, animated: true, completion: nil)
     }
     
 }
