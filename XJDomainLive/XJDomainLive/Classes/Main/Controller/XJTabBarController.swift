@@ -17,13 +17,12 @@ class XJTabBarController: UITabBarController {
     }
 }
 
-
 extension XJTabBarController {
     fileprivate func addChildViewController(_ childController: UIViewController, imageName : String, title : String) {
         childController.tabBarItem.image = UIImage(named: imageName)
         childController.tabBarItem.title = title
         
-        let nav = UINavigationController(rootViewController: childController)
+        let nav = XJNavigationController(rootViewController: childController)
         addChildViewController(nav)
     }
 }

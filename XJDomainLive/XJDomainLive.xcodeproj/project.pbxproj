@@ -11,8 +11,6 @@
 		A3075D571DF95336002BEA19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3075D561DF95336002BEA19 /* Assets.xcassets */; };
 		A3075D6C1DF954D5002BEA19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3075D691DF954D5002BEA19 /* AppDelegate.swift */; };
 		A3075D6D1DF954D5002BEA19 /* XJTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3075D6A1DF954D5002BEA19 /* XJTabBarController.swift */; };
-		A3075D831DF958F9002BEA19 /* XJLiveListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3075D7E1DF958F9002BEA19 /* XJLiveListViewController.swift */; };
-		A3075D841DF958F9002BEA19 /* XJLiveListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3075D7F1DF958F9002BEA19 /* XJLiveListViewController.xib */; };
 		A3075D8C1DF9594A002BEA19 /* XJListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3075D8A1DF9594A002BEA19 /* XJListTableViewCell.swift */; };
 		A3075D8D1DF9594A002BEA19 /* XJListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3075D8B1DF9594A002BEA19 /* XJListTableViewCell.xib */; };
 		A307A12D1DFA5D4F009A375F /* XJAnimationTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A307A12C1DFA5D4F009A375F /* XJAnimationTool.swift */; };
@@ -25,6 +23,9 @@
 		A3D169951DF96BA600FD6CAD /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D169941DF96BA600FD6CAD /* Common.swift */; };
 		A3D169971DF96BC900FD6CAD /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D169961DF96BC900FD6CAD /* API.swift */; };
 		A3D1699A1DF9731900FD6CAD /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D169991DF9731900FD6CAD /* HomeModel.swift */; };
+		A3F3E1AE1DFA9A3C00D5DC36 /* XJLiveListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F3E1AC1DFA9A3C00D5DC36 /* XJLiveListViewController.swift */; };
+		A3F3E1AF1DFA9A3C00D5DC36 /* XJLiveListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3F3E1AD1DFA9A3C00D5DC36 /* XJLiveListViewController.xib */; };
+		A3F3E1B11DFA9D0900D5DC36 /* XJNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F3E1B01DFA9D0900D5DC36 /* XJNavigationController.swift */; };
 		B79E0140832F2B3CF71CE07C /* Pods_XJDomainLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3281EC136D80D9333E24477A /* Pods_XJDomainLive.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,8 +39,6 @@
 		A3075D691DF954D5002BEA19 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3075D6A1DF954D5002BEA19 /* XJTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XJTabBarController.swift; sourceTree = "<group>"; };
 		A3075D711DF9554A002BEA19 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A3075D7E1DF958F9002BEA19 /* XJLiveListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XJLiveListViewController.swift; sourceTree = "<group>"; };
-		A3075D7F1DF958F9002BEA19 /* XJLiveListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XJLiveListViewController.xib; sourceTree = "<group>"; };
 		A3075D8A1DF9594A002BEA19 /* XJListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XJListTableViewCell.swift; sourceTree = "<group>"; };
 		A3075D8B1DF9594A002BEA19 /* XJListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XJListTableViewCell.xib; sourceTree = "<group>"; };
 		A307A12C1DFA5D4F009A375F /* XJAnimationTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XJAnimationTool.swift; sourceTree = "<group>"; };
@@ -52,6 +51,9 @@
 		A3D169941DF96BA600FD6CAD /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		A3D169961DF96BC900FD6CAD /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		A3D169991DF9731900FD6CAD /* HomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		A3F3E1AC1DFA9A3C00D5DC36 /* XJLiveListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XJLiveListViewController.swift; sourceTree = "<group>"; };
+		A3F3E1AD1DFA9A3C00D5DC36 /* XJLiveListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XJLiveListViewController.xib; sourceTree = "<group>"; };
+		A3F3E1B01DFA9D0900D5DC36 /* XJNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XJNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 			children = (
 				A3075D691DF954D5002BEA19 /* AppDelegate.swift */,
 				A3075D6A1DF954D5002BEA19 /* XJTabBarController.swift */,
+				A3F3E1B01DFA9D0900D5DC36 /* XJNavigationController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -154,8 +157,8 @@
 		A3075D7D1DF958F9002BEA19 /* List */ = {
 			isa = PBXGroup;
 			children = (
-				A3075D7E1DF958F9002BEA19 /* XJLiveListViewController.swift */,
-				A3075D7F1DF958F9002BEA19 /* XJLiveListViewController.xib */,
+				A3F3E1AC1DFA9A3C00D5DC36 /* XJLiveListViewController.swift */,
+				A3F3E1AD1DFA9A3C00D5DC36 /* XJLiveListViewController.xib */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -295,9 +298,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A39A2EA21DFA904C00253776 /* XJPrepareLiveViewController.xib in Resources */,
-				A3075D841DF958F9002BEA19 /* XJLiveListViewController.xib in Resources */,
 				A3075D571DF95336002BEA19 /* Assets.xcassets in Resources */,
 				A3075D551DF95336002BEA19 /* Main.storyboard in Resources */,
+				A3F3E1AF1DFA9A3C00D5DC36 /* XJLiveListViewController.xib in Resources */,
 				A39A2EAA1DFA913600253776 /* LiveViewController.xib in Resources */,
 				A3075D8D1DF9594A002BEA19 /* XJListTableViewCell.xib in Resources */,
 			);
@@ -364,8 +367,9 @@
 				A3075D8C1DF9594A002BEA19 /* XJListTableViewCell.swift in Sources */,
 				A3D169901DF9606A00FD6CAD /* XJHomeViewModel.swift in Sources */,
 				A3D169931DF967DF00FD6CAD /* XJNetworkTool.swift in Sources */,
+				A3F3E1AE1DFA9A3C00D5DC36 /* XJLiveListViewController.swift in Sources */,
 				A307A12D1DFA5D4F009A375F /* XJAnimationTool.swift in Sources */,
-				A3075D831DF958F9002BEA19 /* XJLiveListViewController.swift in Sources */,
+				A3F3E1B11DFA9D0900D5DC36 /* XJNavigationController.swift in Sources */,
 				A3D169971DF96BC900FD6CAD /* API.swift in Sources */,
 				A3075D6C1DF954D5002BEA19 /* AppDelegate.swift in Sources */,
 				A39A2EA91DFA913600253776 /* LiveViewController.swift in Sources */,
@@ -488,6 +492,7 @@
 				DEVELOPMENT_TEAM = Y5U92FD2EM;
 				INFOPLIST_FILE = XJDomainLive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRELINK_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xj520.XJDomainLive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -502,6 +507,7 @@
 				DEVELOPMENT_TEAM = Y5U92FD2EM;
 				INFOPLIST_FILE = XJDomainLive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRELINK_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xj520.XJDomainLive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
