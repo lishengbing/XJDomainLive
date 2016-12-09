@@ -1,9 +1,15 @@
 # XJDomainLive
 # 直播APP_XJLive
-
+- 🔍 An NB Live APP for iOS.
 ## 谢谢大家star、后期更新通知到大家
 
-- 🔍 An NB Live APP for iOS.
+
+## 使用说明
+>最好使用真机测试，更加流畅
+>网友反映:第一次运行真机上会有授权什么都不显示，需要第二次进入才可以，下周回处理上传更新
+>谢谢大家一直关注中...
+
+
 
 ## Thanks
 后期不断更新、谢谢各位star 和 save，完整直播app不断完善！
