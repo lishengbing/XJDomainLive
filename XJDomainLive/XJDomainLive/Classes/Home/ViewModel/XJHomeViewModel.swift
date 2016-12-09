@@ -27,7 +27,7 @@ extension XJHomeViewModel {
                 if let dict = dict.1.dictionaryObject {
                     let model = HomeModel(dict: dict)
                     self.anchors.append(model)
-                    //print(dict)
+                    print(dict)
                 }
             }
             finishedCallBack()

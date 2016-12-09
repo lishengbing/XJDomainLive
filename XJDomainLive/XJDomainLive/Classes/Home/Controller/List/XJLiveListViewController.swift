@@ -75,8 +75,10 @@ extension XJLiveListViewController : UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let model = homeVM.anchors[indexPath.row]
         DispatchQueue.main.async {
             let vc = LiveViewController()
+            vc.anchorModel = model
             self.present(vc, animated: true, completion: nil)
         }
     }

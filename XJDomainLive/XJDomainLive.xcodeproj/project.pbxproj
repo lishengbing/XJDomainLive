@@ -26,6 +26,20 @@
 		A3F3E1AE1DFA9A3C00D5DC36 /* XJLiveListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F3E1AC1DFA9A3C00D5DC36 /* XJLiveListViewController.swift */; };
 		A3F3E1AF1DFA9A3C00D5DC36 /* XJLiveListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3F3E1AD1DFA9A3C00D5DC36 /* XJLiveListViewController.xib */; };
 		A3F3E1B11DFA9D0900D5DC36 /* XJNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F3E1B01DFA9D0900D5DC36 /* XJNavigationController.swift */; };
+		A3F3E1B81DFAAE7400D5DC36 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F3E1B71DFAAE7400D5DC36 /* IJKMediaFramework.framework */; };
+		A3F3E1BA1DFAB08000D5DC36 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F3E1B91DFAB08000D5DC36 /* AudioToolbox.framework */; };
+		A3F3E1BC1DFAB08800D5DC36 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F3E1BB1DFAB08800D5DC36 /* AVFoundation.framework */; };
+		A3F3E1BE1DFAB09100D5DC36 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F3E1BD1DFAB09100D5DC36 /* CoreGraphics.framework */; };
+		A3F3E1C01DFAB09B00D5DC36 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F3E1BF1DFAB09B00D5DC36 /* CoreMedia.framework */; };
+		A3F3E1C21DFAB0A400D5DC36 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F3E1C11DFAB0A400D5DC36 /* CoreVideo.framework */; };
+		A3F3E1C41DFAB0B500D5DC36 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F3E1C31DFAB0B500D5DC36 /* MediaPlayer.framework */; };
+		A3F3E1C61DFAB0C100D5DC36 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F3E1C51DFAB0C100D5DC36 /* MobileCoreServices.framework */; };
+		A3F3E1C81DFAB0CB00D5DC36 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F3E1C71DFAB0CB00D5DC36 /* OpenGLES.framework */; };
+		A3F3E1CA1DFAB0D800D5DC36 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F3E1C91DFAB0D800D5DC36 /* QuartzCore.framework */; };
+		A3F3E1CC1DFAB0DF00D5DC36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F3E1CB1DFAB0DF00D5DC36 /* UIKit.framework */; };
+		A3F3E1CE1DFAB0EC00D5DC36 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F3E1CD1DFAB0EC00D5DC36 /* VideoToolbox.framework */; };
+		A3F3E1D01DFAB12600D5DC36 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F3E1CF1DFAB12600D5DC36 /* libz.tbd */; };
+		A3F3E1D21DFAB13000D5DC36 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F3E1D11DFAB13000D5DC36 /* libbz2.tbd */; };
 		B79E0140832F2B3CF71CE07C /* Pods_XJDomainLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3281EC136D80D9333E24477A /* Pods_XJDomainLive.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +68,20 @@
 		A3F3E1AC1DFA9A3C00D5DC36 /* XJLiveListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XJLiveListViewController.swift; sourceTree = "<group>"; };
 		A3F3E1AD1DFA9A3C00D5DC36 /* XJLiveListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XJLiveListViewController.xib; sourceTree = "<group>"; };
 		A3F3E1B01DFA9D0900D5DC36 /* XJNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XJNavigationController.swift; sourceTree = "<group>"; };
+		A3F3E1B71DFAAE7400D5DC36 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		A3F3E1B91DFAB08000D5DC36 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A3F3E1BB1DFAB08800D5DC36 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A3F3E1BD1DFAB09100D5DC36 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A3F3E1BF1DFAB09B00D5DC36 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		A3F3E1C11DFAB0A400D5DC36 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		A3F3E1C31DFAB0B500D5DC36 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		A3F3E1C51DFAB0C100D5DC36 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		A3F3E1C71DFAB0CB00D5DC36 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		A3F3E1C91DFAB0D800D5DC36 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A3F3E1CB1DFAB0DF00D5DC36 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A3F3E1CD1DFAB0EC00D5DC36 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		A3F3E1CF1DFAB12600D5DC36 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		A3F3E1D11DFAB13000D5DC36 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +89,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3F3E1D21DFAB13000D5DC36 /* libbz2.tbd in Frameworks */,
+				A3F3E1D01DFAB12600D5DC36 /* libz.tbd in Frameworks */,
+				A3F3E1CE1DFAB0EC00D5DC36 /* VideoToolbox.framework in Frameworks */,
+				A3F3E1CC1DFAB0DF00D5DC36 /* UIKit.framework in Frameworks */,
+				A3F3E1CA1DFAB0D800D5DC36 /* QuartzCore.framework in Frameworks */,
+				A3F3E1C81DFAB0CB00D5DC36 /* OpenGLES.framework in Frameworks */,
+				A3F3E1C61DFAB0C100D5DC36 /* MobileCoreServices.framework in Frameworks */,
+				A3F3E1C41DFAB0B500D5DC36 /* MediaPlayer.framework in Frameworks */,
+				A3F3E1C21DFAB0A400D5DC36 /* CoreVideo.framework in Frameworks */,
+				A3F3E1C01DFAB09B00D5DC36 /* CoreMedia.framework in Frameworks */,
+				A3F3E1BE1DFAB09100D5DC36 /* CoreGraphics.framework in Frameworks */,
+				A3F3E1BC1DFAB08800D5DC36 /* AVFoundation.framework in Frameworks */,
+				A3F3E1BA1DFAB08000D5DC36 /* AudioToolbox.framework in Frameworks */,
 				B79E0140832F2B3CF71CE07C /* Pods_XJDomainLive.framework in Frameworks */,
+				A3F3E1B81DFAAE7400D5DC36 /* IJKMediaFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +113,19 @@
 		587E1688AE0D64B6DD01B24B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A3F3E1D11DFAB13000D5DC36 /* libbz2.tbd */,
+				A3F3E1CF1DFAB12600D5DC36 /* libz.tbd */,
+				A3F3E1CD1DFAB0EC00D5DC36 /* VideoToolbox.framework */,
+				A3F3E1CB1DFAB0DF00D5DC36 /* UIKit.framework */,
+				A3F3E1C91DFAB0D800D5DC36 /* QuartzCore.framework */,
+				A3F3E1C71DFAB0CB00D5DC36 /* OpenGLES.framework */,
+				A3F3E1C51DFAB0C100D5DC36 /* MobileCoreServices.framework */,
+				A3F3E1C31DFAB0B500D5DC36 /* MediaPlayer.framework */,
+				A3F3E1C11DFAB0A400D5DC36 /* CoreVideo.framework */,
+				A3F3E1BF1DFAB09B00D5DC36 /* CoreMedia.framework */,
+				A3F3E1BD1DFAB09100D5DC36 /* CoreGraphics.framework */,
+				A3F3E1BB1DFAB08800D5DC36 /* AVFoundation.framework */,
+				A3F3E1B91DFAB08000D5DC36 /* AudioToolbox.framework */,
 				3281EC136D80D9333E24477A /* Pods_XJDomainLive.framework */,
 			);
 			name = Frameworks;
@@ -108,6 +163,7 @@
 		A3075D631DF954D5002BEA19 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A3F3E1B61DFAAE7400D5DC36 /* Other */,
 				A3075D671DF954D5002BEA19 /* Main */,
 				A3D169911DF967BE00FD6CAD /* Tool */,
 				A3075D641DF954D5002BEA19 /* Home */,
@@ -223,6 +279,14 @@
 				A3D169991DF9731900FD6CAD /* HomeModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A3F3E1B61DFAAE7400D5DC36 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				A3F3E1B71DFAAE7400D5DC36 /* IJKMediaFramework.framework */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 		F5C73675581F96DE77668FD0 /* Pods */ = {
@@ -490,6 +554,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Y5U92FD2EM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/XJDomainLive/Classes/Other",
+				);
 				INFOPLIST_FILE = XJDomainLive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRELINK_FLAGS = "";
@@ -505,6 +573,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Y5U92FD2EM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/XJDomainLive/Classes/Other",
+				);
 				INFOPLIST_FILE = XJDomainLive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRELINK_FLAGS = "";

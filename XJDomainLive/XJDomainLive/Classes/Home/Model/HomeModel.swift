@@ -11,7 +11,7 @@ import UIKit
 class HomeModel: NSObject {
 
     /// 直播视频流
-    var shareAddr : String?
+    var stream_addr : String?
     /* 关注人 */
     var online_users : Int = 0
     /* 城市 */
