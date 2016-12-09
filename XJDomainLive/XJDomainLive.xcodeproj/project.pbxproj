@@ -14,6 +14,11 @@
 		A3075D8C1DF9594A002BEA19 /* XJListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3075D8A1DF9594A002BEA19 /* XJListTableViewCell.swift */; };
 		A3075D8D1DF9594A002BEA19 /* XJListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3075D8B1DF9594A002BEA19 /* XJListTableViewCell.xib */; };
 		A307A12D1DFA5D4F009A375F /* XJAnimationTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A307A12C1DFA5D4F009A375F /* XJAnimationTool.swift */; };
+		A30BC59D1DFABE08003E8A80 /* b1.gif in Resources */ = {isa = PBXBuildFile; fileRef = A30BC5981DFABE08003E8A80 /* b1.gif */; };
+		A30BC59E1DFABE08003E8A80 /* b2.gif in Resources */ = {isa = PBXBuildFile; fileRef = A30BC5991DFABE08003E8A80 /* b2.gif */; };
+		A30BC59F1DFABE08003E8A80 /* b3.gif in Resources */ = {isa = PBXBuildFile; fileRef = A30BC59A1DFABE08003E8A80 /* b3.gif */; };
+		A30BC5A01DFABE08003E8A80 /* b4.gif in Resources */ = {isa = PBXBuildFile; fileRef = A30BC59B1DFABE08003E8A80 /* b4.gif */; };
+		A30BC5A11DFABE08003E8A80 /* b5.gif in Resources */ = {isa = PBXBuildFile; fileRef = A30BC59C1DFABE08003E8A80 /* b5.gif */; };
 		A39A2EA11DFA904C00253776 /* XJPrepareLiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39A2E9F1DFA904C00253776 /* XJPrepareLiveViewController.swift */; };
 		A39A2EA21DFA904C00253776 /* XJPrepareLiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A39A2EA01DFA904C00253776 /* XJPrepareLiveViewController.xib */; };
 		A39A2EA91DFA913600253776 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39A2EA71DFA913600253776 /* LiveViewController.swift */; };
@@ -56,6 +61,11 @@
 		A3075D8A1DF9594A002BEA19 /* XJListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XJListTableViewCell.swift; sourceTree = "<group>"; };
 		A3075D8B1DF9594A002BEA19 /* XJListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XJListTableViewCell.xib; sourceTree = "<group>"; };
 		A307A12C1DFA5D4F009A375F /* XJAnimationTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XJAnimationTool.swift; sourceTree = "<group>"; };
+		A30BC5981DFABE08003E8A80 /* b1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = b1.gif; sourceTree = "<group>"; };
+		A30BC5991DFABE08003E8A80 /* b2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = b2.gif; sourceTree = "<group>"; };
+		A30BC59A1DFABE08003E8A80 /* b3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = b3.gif; sourceTree = "<group>"; };
+		A30BC59B1DFABE08003E8A80 /* b4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = b4.gif; sourceTree = "<group>"; };
+		A30BC59C1DFABE08003E8A80 /* b5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = b5.gif; sourceTree = "<group>"; };
 		A39A2E9F1DFA904C00253776 /* XJPrepareLiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XJPrepareLiveViewController.swift; sourceTree = "<group>"; };
 		A39A2EA01DFA904C00253776 /* XJPrepareLiveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XJPrepareLiveViewController.xib; sourceTree = "<group>"; };
 		A39A2EA71DFA913600253776 /* LiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
@@ -163,6 +173,7 @@
 		A3075D631DF954D5002BEA19 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A30BC5971DFABE08003E8A80 /* Resource */,
 				A3F3E1B61DFAAE7400D5DC36 /* Other */,
 				A3075D671DF954D5002BEA19 /* Main */,
 				A3D169911DF967BE00FD6CAD /* Tool */,
@@ -252,6 +263,18 @@
 				A39A2EA01DFA904C00253776 /* XJPrepareLiveViewController.xib */,
 			);
 			path = Capture;
+			sourceTree = "<group>";
+		};
+		A30BC5971DFABE08003E8A80 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A30BC5981DFABE08003E8A80 /* b1.gif */,
+				A30BC5991DFABE08003E8A80 /* b2.gif */,
+				A30BC59A1DFABE08003E8A80 /* b3.gif */,
+				A30BC59B1DFABE08003E8A80 /* b4.gif */,
+				A30BC59C1DFABE08003E8A80 /* b5.gif */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		A3D1698E1DF9605700FD6CAD /* ViewModel */ = {
@@ -361,11 +384,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A30BC5A01DFABE08003E8A80 /* b4.gif in Resources */,
+				A30BC59D1DFABE08003E8A80 /* b1.gif in Resources */,
 				A39A2EA21DFA904C00253776 /* XJPrepareLiveViewController.xib in Resources */,
+				A30BC59F1DFABE08003E8A80 /* b3.gif in Resources */,
 				A3075D571DF95336002BEA19 /* Assets.xcassets in Resources */,
+				A30BC5A11DFABE08003E8A80 /* b5.gif in Resources */,
 				A3075D551DF95336002BEA19 /* Main.storyboard in Resources */,
 				A3F3E1AF1DFA9A3C00D5DC36 /* XJLiveListViewController.xib in Resources */,
 				A39A2EAA1DFA913600253776 /* LiveViewController.xib in Resources */,
+				A30BC59E1DFABE08003E8A80 /* b2.gif in Resources */,
 				A3075D8D1DF9594A002BEA19 /* XJListTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

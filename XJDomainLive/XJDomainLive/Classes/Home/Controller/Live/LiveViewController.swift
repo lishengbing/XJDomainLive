@@ -29,7 +29,6 @@ class LiveViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         XJAnimationTool.share.dismissAnimation {
-           self.ijkLivePlay.prepareToPlay()
         }
     }
     
@@ -53,7 +52,7 @@ extension LiveViewController {
         self.ijkLivePlay.view.frame = UIScreen.main.bounds
         self.view.addSubview(self.ijkLivePlay.view)
         self.view.insertSubview(self.btn, aboveSubview: self.ijkLivePlay.view)
-        
+        self.ijkLivePlay.prepareToPlay()
     }
 }
 
