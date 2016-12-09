@@ -13,11 +13,18 @@ class XJLiveListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     fileprivate lazy var homeVM : XJHomeViewModel = XJHomeViewModel()
+    static var isDirectionUp : Bool = false
+    fileprivate var lastOffsetY : CGFloat = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
         loadHomeData()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        XJLiveListViewController.isDirectionUp = false
     }
 }
 
@@ -26,17 +33,8 @@ extension XJLiveListViewController {
         navigationItem.title = "直播列表"
         tableView.register(UINib(nibName: "XJListTableViewCell", bundle: nil), forCellReuseIdentifier: kCellID)
         XJAnimationTool.share.showAnimation(view: self.view)
-        
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "跳转", style: .plain, target: self, action: #selector(leftClick))
-    }
-    
-    
-    @objc fileprivate func leftClick() {
-        let vc = LiveViewController()
-        present(vc, animated: true, completion: nil)
     }
 }
-
 
 extension XJLiveListViewController {
     fileprivate func loadHomeData() {
@@ -68,12 +66,11 @@ extension XJLiveListViewController : UITableViewDelegate, UITableViewDataSource 
         cell.layer.transform = CATransform3DMakeScale(0.3, 0.3, 1)
         UIView.animate(withDuration: 0.5, delay: 0.0, options: [], animations: {
             cell.layer.transform = CATransform3DMakeScale(1, 1, 1)
+        }, completion: { (_) in
             let anim = CATransition()
             anim.type = "rippleEffect"
             anim.duration = 1
             cell.layer.add(anim, forKey: "11")
-        }, completion: { (_) in
-           
         })
     }
     
@@ -84,4 +81,47 @@ extension XJLiveListViewController : UITableViewDelegate, UITableViewDataSource 
         }
     }
 }
+
+extension XJLiveListViewController {
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let currentOffsetY = scrollView.contentOffset.y
+        XJLiveListViewController.isDirectionUp = (lastOffsetY - currentOffsetY) < 0 ? true : false
+        lastOffsetY = currentOffsetY
+    }
+    
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        if velocity.y > 0 {
+            XJLiveListViewController.isDirectionUp = true
+        }else if velocity.y < 0 {
+            XJLiveListViewController.isDirectionUp = false
+        }
+        beginAnim()
+    }
+    
+    fileprivate func beginAnim() {
+        if XJLiveListViewController.isDirectionUp {
+            hiddenTopViewAnim()
+        }else {
+            showTopViewAnim()
+        }
+    }
+    
+    fileprivate func hiddenTopViewAnim() {
+        UIView.animate(withDuration: 2.5, animations: {
+            self.navigationController?.setNavigationBarHidden(true, animated: true)
+            self.tabBarController?.tabBar.isHidden = false
+        }, completion: { (_) in
+        })
+    }
+    
+    fileprivate func showTopViewAnim() {
+        UIView.animate(withDuration: 2.5, animations: {
+            self.navigationController?.setNavigationBarHidden(false, animated: true)
+            self.tabBarController?.tabBar.isHidden = true
+        }, completion: { (_) in
+        })
+    }
+}
+
 

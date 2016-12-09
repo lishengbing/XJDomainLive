@@ -12,12 +12,19 @@ class LiveViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.red
-    }
-
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesBegan(touches, with: event)
-        dismiss(animated: true, completion: nil)
+       setupUI()
     }
     
+}
+
+extension LiveViewController {
+    fileprivate func setupUI() {
+        view.backgroundColor = kColorRandom
+    }
+}
+
+extension LiveViewController {
+    @IBAction func backClick() {
+       dismiss(animated: true, completion: nil)
+    }
 }
