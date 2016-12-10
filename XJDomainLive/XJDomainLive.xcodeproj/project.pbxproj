@@ -23,10 +23,14 @@
 		A30BC5A51DFACD3A003E8A80 /* c2.gif in Resources */ = {isa = PBXBuildFile; fileRef = A30BC5A41DFACD3A003E8A80 /* c2.gif */; };
 		A30BC5A71DFACD5B003E8A80 /* c1.gif in Resources */ = {isa = PBXBuildFile; fileRef = A30BC5A61DFACD5B003E8A80 /* c1.gif */; };
 		A30BC5A91DFAD64A003E8A80 /* c4.png in Resources */ = {isa = PBXBuildFile; fileRef = A30BC5A81DFAD64A003E8A80 /* c4.png */; };
+		A3158CD41DFBD1C5005F383F /* LiveTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3158CD31DFBD1C5005F383F /* LiveTopView.swift */; };
+		A3158CD61DFBD1CE005F383F /* LiveTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3158CD51DFBD1CE005F383F /* LiveTopView.xib */; };
+		A3158CD81DFBE369005F383F /* LiveTopCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3158CD71DFBE369005F383F /* LiveTopCollectionView.swift */; };
+		A3158CDB1DFBE3BC005F383F /* LiveTopCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3158CD91DFBE3BC005F383F /* LiveTopCollectionViewCell.swift */; };
+		A3158CDC1DFBE3BC005F383F /* LiveTopCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3158CDA1DFBE3BC005F383F /* LiveTopCollectionViewCell.xib */; };
 		A39A2EA11DFA904C00253776 /* XJPrepareLiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39A2E9F1DFA904C00253776 /* XJPrepareLiveViewController.swift */; };
 		A39A2EA21DFA904C00253776 /* XJPrepareLiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A39A2EA01DFA904C00253776 /* XJPrepareLiveViewController.xib */; };
 		A39A2EA91DFA913600253776 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39A2EA71DFA913600253776 /* LiveViewController.swift */; };
-		A39A2EAA1DFA913600253776 /* LiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A39A2EA81DFA913600253776 /* LiveViewController.xib */; };
 		A3D169901DF9606A00FD6CAD /* XJHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D1698F1DF9606A00FD6CAD /* XJHomeViewModel.swift */; };
 		A3D169931DF967DF00FD6CAD /* XJNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D169921DF967DF00FD6CAD /* XJNetworkTool.swift */; };
 		A3D169951DF96BA600FD6CAD /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D169941DF96BA600FD6CAD /* Common.swift */; };
@@ -74,10 +78,14 @@
 		A30BC5A41DFACD3A003E8A80 /* c2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = c2.gif; sourceTree = "<group>"; };
 		A30BC5A61DFACD5B003E8A80 /* c1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = c1.gif; sourceTree = "<group>"; };
 		A30BC5A81DFAD64A003E8A80 /* c4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c4.png; sourceTree = "<group>"; };
+		A3158CD31DFBD1C5005F383F /* LiveTopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveTopView.swift; sourceTree = "<group>"; };
+		A3158CD51DFBD1CE005F383F /* LiveTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiveTopView.xib; sourceTree = "<group>"; };
+		A3158CD71DFBE369005F383F /* LiveTopCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveTopCollectionView.swift; sourceTree = "<group>"; };
+		A3158CD91DFBE3BC005F383F /* LiveTopCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveTopCollectionViewCell.swift; sourceTree = "<group>"; };
+		A3158CDA1DFBE3BC005F383F /* LiveTopCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiveTopCollectionViewCell.xib; sourceTree = "<group>"; };
 		A39A2E9F1DFA904C00253776 /* XJPrepareLiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XJPrepareLiveViewController.swift; sourceTree = "<group>"; };
 		A39A2EA01DFA904C00253776 /* XJPrepareLiveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XJPrepareLiveViewController.xib; sourceTree = "<group>"; };
 		A39A2EA71DFA913600253776 /* LiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
-		A39A2EA81DFA913600253776 /* LiveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiveViewController.xib; sourceTree = "<group>"; };
 		A3D1698F1DF9606A00FD6CAD /* XJHomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XJHomeViewModel.swift; sourceTree = "<group>"; };
 		A3D169921DF967DF00FD6CAD /* XJNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XJNetworkTool.swift; sourceTree = "<group>"; };
 		A3D169941DF96BA600FD6CAD /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
@@ -242,7 +250,6 @@
 			isa = PBXGroup;
 			children = (
 				A39A2EA71DFA913600253776 /* LiveViewController.swift */,
-				A39A2EA81DFA913600253776 /* LiveViewController.xib */,
 			);
 			path = Live;
 			sourceTree = "<group>";
@@ -250,6 +257,7 @@
 		A3075D871DF95927002BEA19 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A3158CD21DFBD1BD005F383F /* Live */,
 				A3075D881DF95927002BEA19 /* List */,
 			);
 			path = View;
@@ -287,6 +295,18 @@
 				A30BC59C1DFABE08003E8A80 /* b5.gif */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		A3158CD21DFBD1BD005F383F /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				A3158CD31DFBD1C5005F383F /* LiveTopView.swift */,
+				A3158CD51DFBD1CE005F383F /* LiveTopView.xib */,
+				A3158CD71DFBE369005F383F /* LiveTopCollectionView.swift */,
+				A3158CD91DFBE3BC005F383F /* LiveTopCollectionViewCell.swift */,
+				A3158CDA1DFBE3BC005F383F /* LiveTopCollectionViewCell.xib */,
+			);
+			path = Live;
 			sourceTree = "<group>";
 		};
 		A3D1698E1DF9605700FD6CAD /* ViewModel */ = {
@@ -404,12 +424,13 @@
 				A39A2EA21DFA904C00253776 /* XJPrepareLiveViewController.xib in Resources */,
 				A30BC59F1DFABE08003E8A80 /* b3.gif in Resources */,
 				A30BC5A71DFACD5B003E8A80 /* c1.gif in Resources */,
+				A3158CDC1DFBE3BC005F383F /* LiveTopCollectionViewCell.xib in Resources */,
 				A3075D571DF95336002BEA19 /* Assets.xcassets in Resources */,
 				A30BC5A11DFABE08003E8A80 /* b5.gif in Resources */,
 				A3075D551DF95336002BEA19 /* Main.storyboard in Resources */,
 				A3F3E1AF1DFA9A3C00D5DC36 /* XJLiveListViewController.xib in Resources */,
-				A39A2EAA1DFA913600253776 /* LiveViewController.xib in Resources */,
 				A30BC59E1DFABE08003E8A80 /* b2.gif in Resources */,
+				A3158CD61DFBD1CE005F383F /* LiveTopView.xib in Resources */,
 				A3075D8D1DF9594A002BEA19 /* XJListTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,7 +492,9 @@
 			files = (
 				A39A2EA11DFA904C00253776 /* XJPrepareLiveViewController.swift in Sources */,
 				A3D169951DF96BA600FD6CAD /* Common.swift in Sources */,
+				A3158CD81DFBE369005F383F /* LiveTopCollectionView.swift in Sources */,
 				A3075D6D1DF954D5002BEA19 /* XJTabBarController.swift in Sources */,
+				A3158CDB1DFBE3BC005F383F /* LiveTopCollectionViewCell.swift in Sources */,
 				A3075D8C1DF9594A002BEA19 /* XJListTableViewCell.swift in Sources */,
 				A3D169901DF9606A00FD6CAD /* XJHomeViewModel.swift in Sources */,
 				A3D169931DF967DF00FD6CAD /* XJNetworkTool.swift in Sources */,
@@ -479,6 +502,7 @@
 				A307A12D1DFA5D4F009A375F /* XJAnimationTool.swift in Sources */,
 				A3F3E1B11DFA9D0900D5DC36 /* XJNavigationController.swift in Sources */,
 				A3D169971DF96BC900FD6CAD /* API.swift in Sources */,
+				A3158CD41DFBD1C5005F383F /* LiveTopView.swift in Sources */,
 				A3075D6C1DF954D5002BEA19 /* AppDelegate.swift in Sources */,
 				A39A2EA91DFA913600253776 /* LiveViewController.swift in Sources */,
 				A3D1699A1DF9731900FD6CAD /* HomeModel.swift in Sources */,

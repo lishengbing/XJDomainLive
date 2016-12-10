@@ -12,10 +12,10 @@ import IJKMediaFramework
 
 class LiveViewController: UIViewController {
 
-    
     @IBOutlet weak var btn: UIButton!
     var anchorModel : HomeModel!
     var ijkLivePlay : IJKFFMoviePlayerController!
+    fileprivate lazy var topView : LiveTopView = LiveTopView.topView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +24,8 @@ class LiveViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.view.backgroundColor = UIColor.white
+        self.topView.isHidden = true
         XJAnimationTool.share.showAnimation(view: self.view)
         
         /*
@@ -32,15 +34,11 @@ class LiveViewController: UIViewController {
          IJKMPMoviePlayerPlaybackStateDidChangeNotification(播放状态改变通知)
          */
         NotificationCenter.default.addObserver(self, selector: #selector(playbackStateDidChange(noti:)), name: NSNotification.Name.IJKMPMoviePlayerPlaybackStateDidChange, object: nil)
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
         self.ijkLivePlay.prepareToPlay()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(true)
+        super.viewWillDisappear(animated)
         NotificationCenter.default.removeObserver(self)
         XJAnimationTool.share.dismissAnimation({})
         
@@ -56,7 +54,7 @@ class LiveViewController: UIViewController {
 
 extension LiveViewController {
     fileprivate func setupUI() {
-        self.view.backgroundColor = UIColor.white
+        self.view.backgroundColor = UIColor.clear
         let requestUrl = URL(string: self.anchorModel.stream_addr ?? "")
         
         // 00设置不报告日志
@@ -70,7 +68,7 @@ extension LiveViewController {
         ijkLivePlay = IJKFFMoviePlayerController(contentURL: requestUrl, with: options!)
         
         // 1.设置frame为整个屏幕
-        ijkLivePlay.view.frame = UIScreen.main.bounds
+        ijkLivePlay.view.frame = view.bounds
         
         // 2.设置适配横竖屏幕(设置四边固定，长度灵活)
         ijkLivePlay.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -85,7 +83,10 @@ extension LiveViewController {
         self.view.autoresizesSubviews = true
         
         self.view.addSubview(self.ijkLivePlay.view)
-        self.view.insertSubview(self.btn, aboveSubview: self.ijkLivePlay.view)
+        ijkLivePlay.view.addSubview(topView)
+        topView.frame = ijkLivePlay.view.bounds
+        topView.anchors = anchorModel
+        topView.backBtn.addTarget(self, action: #selector(backClick), for: .touchUpInside)
     }
 }
 
@@ -100,10 +101,10 @@ extension LiveViewController {
             print("停止")
         case .playing:
             print("正在播放")
-            UIView.animate(withDuration: 0.25, animations: {
-                XJAnimationTool.share.dismissAnimation({})
+            XJAnimationTool.share.dismissAnimation({
+                self.ijkLivePlay.play()
+                self.topView.isHidden = false
             })
-            
         case .paused:
             print("暂停")
         case .interrupted:
