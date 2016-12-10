@@ -8,6 +8,7 @@
 
 import UIKit
 
+typealias animationCloseBlock = () -> ()
 class XJAnimationTool {
     static var share : XJAnimationTool = XJAnimationTool()
     
@@ -19,6 +20,9 @@ class XJAnimationTool {
         imageView.autoresizingMask = [.flexibleTopMargin, .flexibleBottomMargin]
         return imageView
     }()
+    
+    fileprivate lazy var backBtn : UIButton = UIButton()
+    var myBlock : animationCloseBlock?
 }
 
 extension XJAnimationTool {
@@ -28,6 +32,15 @@ extension XJAnimationTool {
         view.addSubview(imageView)
         imageView.center = view.center
         imageView.isHidden = false
+        backBtn.isHidden = false
+        
+        // 添加返回按钮
+        view.addSubview(backBtn)
+        backBtn.frame = CGRect(x: 0, y: 25, width: 60, height: 40)
+        backBtn.setTitle("返 回", for: .normal)
+        backBtn.setTitleColor(UIColor.orange, for: .normal)
+        backBtn.titleLabel?.font = UIFont.systemFont(ofSize: 15)
+        backBtn.addTarget(self, action: #selector(backClick), for: .touchUpInside)
         
         // 3.执行动画
         imageView.startAnimating()
@@ -39,7 +52,15 @@ extension XJAnimationTool {
         
         // 2.隐藏animationImageView
         imageView.isHidden = true
+        backBtn.isHidden = true
         
         finished()
+    }
+}
+
+extension XJAnimationTool {
+    @objc fileprivate func backClick() {
+         self.myBlock!()
+        dismissAnimation {}
     }
 }

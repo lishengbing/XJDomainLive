@@ -87,6 +87,11 @@ extension LiveViewController {
         topView.frame = ijkLivePlay.view.bounds
         topView.anchors = anchorModel
         topView.backBtn.addTarget(self, action: #selector(backClick), for: .touchUpInside)
+        
+        // 加载不出来时候，关闭从新加载
+        XJAnimationTool.share.myBlock = { [unowned self] () -> () in
+            self.backClick()
+        }
     }
 }
 
@@ -115,4 +120,7 @@ extension LiveViewController {
             print("快退")
         }
     }
+    
+    
+    
 }
