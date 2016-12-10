@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MJRefresh
 private let kCellID = "kCellID"
 
 class XJLiveListViewController: UIViewController {
@@ -19,7 +20,7 @@ class XJLiveListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        loadHomeData()
+        refreshData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -37,9 +38,17 @@ extension XJLiveListViewController {
 }
 
 extension XJLiveListViewController {
-    fileprivate func loadHomeData() {
+    
+    fileprivate func refreshData() {
+        tableView.mj_header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: #selector(loadHomeData))
+        tableView.mj_header.beginRefreshing()
+    }
+    
+    
+    @objc fileprivate func loadHomeData() {
         homeVM.loadData {
             XJAnimationTool.share.dismissAnimation({
+                self.tableView.mj_header.endRefreshing()
                 self.tableView.reloadData()
             })
         }
@@ -111,17 +120,19 @@ extension XJLiveListViewController {
     
     fileprivate func hiddenTopViewAnim() {
         UIView.animate(withDuration: 2.5, animations: {
+            self.tableView.mj_header.isHidden = true
             self.navigationController?.setNavigationBarHidden(true, animated: true)
-            self.tabBarController?.tabBar.isHidden = false
         }, completion: { (_) in
+            self.tabBarController?.tabBar.isHidden = false
         })
     }
     
     fileprivate func showTopViewAnim() {
         UIView.animate(withDuration: 2.5, animations: {
+            self.tableView.mj_header.isHidden = false
             self.navigationController?.setNavigationBarHidden(false, animated: true)
-            self.tabBarController?.tabBar.isHidden = true
         }, completion: { (_) in
+            self.tabBarController?.tabBar.isHidden = true
         })
     }
 }

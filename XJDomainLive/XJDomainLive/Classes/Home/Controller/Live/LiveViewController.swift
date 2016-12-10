@@ -9,6 +9,7 @@
 import UIKit
 import IJKMediaFramework
 
+
 class LiveViewController: UIViewController {
 
     
@@ -99,7 +100,10 @@ extension LiveViewController {
             print("停止")
         case .playing:
             print("正在播放")
-            XJAnimationTool.share.dismissAnimation({})
+            UIView.animate(withDuration: 0.25, animations: {
+                XJAnimationTool.share.dismissAnimation({})
+            })
+            
         case .paused:
             print("暂停")
         case .interrupted:
