@@ -120,19 +120,19 @@ extension XJLiveListViewController {
     
     fileprivate func hiddenTopViewAnim() {
         UIView.animate(withDuration: 2.5, animations: {
-            self.tableView.mj_header.isHidden = true
             self.navigationController?.setNavigationBarHidden(true, animated: true)
         }, completion: { (_) in
+            self.tableView.mj_header.isHidden = true
             self.tabBarController?.tabBar.isHidden = false
         })
     }
     
     fileprivate func showTopViewAnim() {
         UIView.animate(withDuration: 2.5, animations: {
-            self.tableView.mj_header.isHidden = false
             self.navigationController?.setNavigationBarHidden(false, animated: true)
         }, completion: { (_) in
             self.tabBarController?.tabBar.isHidden = true
+            self.tableView.mj_header.isHidden = false
         })
     }
 }
