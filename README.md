@@ -24,7 +24,8 @@ https://github.com/lishengbing/XJDomainLive
 
 
 ## LIVE
-![XJDmain](https://github.com/lishengbing/XJDomainLive/blob/master/XJDomainLive/XJDomainLive/Classes/Resource/d1.gif）
+![XJDmain](https://github.com/lishengbing/XJDomainLive/blob/master/XJDomainLive/XJDomainLive/Classes/Resource/d1.gif)
+           
 ![XJDmain](https://github.com/lishengbing/XJDomainLive/blob/master/XJDomainLive/XJDomainLive/Classes/Resource/c1.gif) | ![XJDmain](https://github.com/lishengbing/XJDomainLive/blob/master/XJDomainLive/XJDomainLive/Classes/Resource/c2.gif) 
 
 ![XJDmain](https://github.com/lishengbing/XJDomainLive/blob/master/XJDomainLive/XJDomainLive/Classes/Resource/c3.gif) | ![XJDmain](https://github.com/lishengbing/XJDomainLive/blob/master/XJDomainLive/XJDomainLive/Classes/Resource/b5.gif)
