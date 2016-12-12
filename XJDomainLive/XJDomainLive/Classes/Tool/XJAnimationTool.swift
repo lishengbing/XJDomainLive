@@ -27,7 +27,6 @@ class XJAnimationTool {
     
     var timer : Timer?
     fileprivate var view : UIView!
-    
 }
 
 extension XJAnimationTool {
@@ -74,7 +73,7 @@ extension XJAnimationTool {
 
 extension XJAnimationTool {
     func animationForHeart() {
-        var imageV = UIImageView()
+        let imageV = UIImageView()
         imageV.frame = CGRect(x: kScreenW - CGFloat(84), y: kScreenH - CGFloat(58), width: 25, height: 25)
         imageV.backgroundColor = UIColor.clear
         imageV.clipsToBounds = true
@@ -92,32 +91,17 @@ extension XJAnimationTool {
             scale = 1.2
         }
         
-        UIView.beginAnimations(nil, context: &imageV)
-        UIView.setAnimationDuration(7 * speed)
-        imageV.frame = CGRect(x: x, y: kScreenH - 400, width: CGFloat(25 * scale), height: CGFloat(25 * scale))
-        UIView.setAnimationDidStop(#selector(animationCoplete(animationID:finished:context:)))
-        UIView.setAnimationDelegate(self)
-        UIView.setAnimationCurve(.easeIn)
-        UIView.commitAnimations()
-        
-    }
-    
-   @objc fileprivate func animationCoplete(animationID : String, finished : NSNumber, context : UnsafeMutableRawPointer?) {
-    // 校验
-    guard  let context = context else {
-        return
-    }
-    let animationImageV = context.assumingMemoryBound(to: UIImageView.self)
-    //print(animationImageV.pointee)
-    //animationImageV.pointee.removeFromSuperview()
-    
+        UIView.animate(withDuration: 7 * speed, animations: {
+            imageV.frame = CGRect(x: x, y: kScreenH - 400, width: CGFloat(25 * scale), height: CGFloat(25 * scale))
+        }, completion: { (_) in
+            imageV.removeFromSuperview()
+        })
     }
 }
 
-
 extension XJAnimationTool {
     func addCycleTimer() {
-        timer = Timer(timeInterval: 0.5, target: self, selector: #selector(scrollToNext), userInfo: nil, repeats: true)
+        timer = Timer(timeInterval: 0.35, target: self, selector: #selector(scrollToNext), userInfo: nil, repeats: true)
         RunLoop.main.add(timer!, forMode:RunLoopMode.commonModes)
     }
     
@@ -127,6 +111,8 @@ extension XJAnimationTool {
     }
     
     @objc fileprivate func scrollToNext() {
+        XJAnimationTool.share.animationForHeart()
+        XJAnimationTool.share.animationForHeart()
         XJAnimationTool.share.animationForHeart()
     }
 }

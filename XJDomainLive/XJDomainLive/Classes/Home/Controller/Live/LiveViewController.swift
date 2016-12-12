@@ -41,6 +41,7 @@ class LiveViewController: UIViewController {
         super.viewWillDisappear(animated)
         NotificationCenter.default.removeObserver(self)
         XJAnimationTool.share.dismissAnimation({})
+        XJAnimationTool.share.removeCycleTimer()
         
         /* 释放 */
         if	ijkLivePlay != nil {
@@ -51,11 +52,7 @@ class LiveViewController: UIViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        //XJAnimationTool.share.animationForHeart()
-    }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
+        XJAnimationTool.share.animationForHeart()
     }
 }
 
@@ -100,6 +97,9 @@ extension LiveViewController {
             self.backClick()
         }
         
+        // 添加定时器
+        XJAnimationTool.share.addCycleTimer()
+        
     }
 }
 
@@ -128,7 +128,4 @@ extension LiveViewController {
             print("快退")
         }
     }
-    
-    
-    
 }
