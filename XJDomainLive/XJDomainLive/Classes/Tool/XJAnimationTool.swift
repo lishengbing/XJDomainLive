@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 typealias animationCloseBlock = () -> ()
 class XJAnimationTool {
@@ -24,8 +25,8 @@ class XJAnimationTool {
     fileprivate lazy var backBtn : UIButton = UIButton()
     var myBlock : animationCloseBlock?
     
-    lazy var imageViewArrays : [UIImageView] = [UIImageView]()
-    static var num : Int = 0
+    var timer : Timer?
+    fileprivate var view : UIView!
     
 }
 
@@ -48,6 +49,7 @@ extension XJAnimationTool {
         
         // 3.执行动画
         imageView.startAnimating()
+        self.view = view
     }
     
     func dismissAnimation(_ finished : @escaping () -> ()) {
@@ -70,56 +72,63 @@ extension XJAnimationTool {
     }
 }
 
-
-
-
 extension XJAnimationTool {
-    func animationForHeart(view : UIView) {
+    func animationForHeart() {
         var imageV = UIImageView()
-        imageV.frame = CGRect(x: kScreenW - CGFloat(80), y: kScreenH - CGFloat(40), width: 25, height: 25)
+        imageV.frame = CGRect(x: kScreenW - CGFloat(84), y: kScreenH - CGFloat(58), width: 25, height: 25)
         imageV.backgroundColor = UIColor.clear
         imageV.clipsToBounds = true
-        view.addSubview(imageV)
+        self.view.addSubview(imageV)
         
+        // UInt32(0.9)
         let starX : CGFloat = CGFloat(round(Double(arc4random() % 300)))
-        let scale  = round(Double(arc4random() % 2 + 1))
-        let speed  = 1 / round(Double(arc4random() % 900) ) + 0.6
+        var scale  = round(Double(arc4random() % 2 + 1))
+        let speed  = 1 / round(Double(arc4random() % 900) ) + 0.4
         let imageName = Int(round(Double(arc4random() % 10)))
-        print(imageName)
-        
-        let index = XJAnimationTool.num
-        let indexStr = "\(index)"
-        UIView.beginAnimations(indexStr, context: &imageV)
-        UIView.setAnimationDuration(7 * speed)
         let name = String(format: "XJDomain.bundle/heart%d.png", imageName)
         imageV.image = UIImage(named: name)
-        let x = kScreenW - starX
-        imageV.frame = CGRect(x: x, y: 100, width: CGFloat(25 * scale), height: CGFloat(25 * scale))
+        let x = (kScreenW - starX) * 1.5
+        if scale >= 1.2 {
+            scale = 1.2
+        }
+        
+        UIView.beginAnimations(nil, context: &imageV)
+        UIView.setAnimationDuration(7 * speed)
+        imageV.frame = CGRect(x: x, y: kScreenH - 400, width: CGFloat(25 * scale), height: CGFloat(25 * scale))
         UIView.setAnimationDidStop(#selector(animationCoplete(animationID:finished:context:)))
         UIView.setAnimationDelegate(self)
         UIView.setAnimationCurve(.easeIn)
         UIView.commitAnimations()
         
-        // 计数器
-        XJAnimationTool.num += 1
-        imageViewArrays.append(imageV)
     }
     
    @objc fileprivate func animationCoplete(animationID : String, finished : NSNumber, context : UnsafeMutableRawPointer?) {
+    // 校验
+    guard  let context = context else {
+        return
+    }
+    let animationImageV = context.assumingMemoryBound(to: UIImageView.self)
+    //print(animationImageV.pointee)
+    //animationImageV.pointee.removeFromSuperview()
     
-    let index = Int(animationID) ?? 0
-    let imageV = imageViewArrays[index]
-    imageV.removeFromSuperview()
-    
-//       let animationImageV = context.assumingMemoryBound(to: UIImageView.self)
-//       let imageV = animationImageV.pointee
-//       imageV.image = UIImage(named: String(format: "XJDomain.bundle/heart%d.png", 8))
-//       imageV.removeFromSuperview()
-    print("animationID",animationID)
-    print(imageViewArrays.count)
+    }
+}
+
+
+extension XJAnimationTool {
+    func addCycleTimer() {
+        timer = Timer(timeInterval: 0.5, target: self, selector: #selector(scrollToNext), userInfo: nil, repeats: true)
+        RunLoop.main.add(timer!, forMode:RunLoopMode.commonModes)
     }
     
+     func removeCycleTimer() {
+        timer?.invalidate()
+        timer = nil
+    }
     
+    @objc fileprivate func scrollToNext() {
+        XJAnimationTool.share.animationForHeart()
+    }
 }
 
 

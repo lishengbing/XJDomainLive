@@ -41,9 +41,6 @@ class LiveViewController: UIViewController {
         super.viewWillDisappear(animated)
         NotificationCenter.default.removeObserver(self)
         XJAnimationTool.share.dismissAnimation({})
-        XJAnimationTool.num = 0
-        XJAnimationTool.share.imageViewArrays.removeAll()
-        
         
         /* 释放 */
         if	ijkLivePlay != nil {
@@ -54,10 +51,12 @@ class LiveViewController: UIViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        XJAnimationTool.share.animationForHeart(view: self.view)
+        //XJAnimationTool.share.animationForHeart()
     }
     
-   
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+    }
 }
 
 extension LiveViewController {
@@ -100,7 +99,6 @@ extension LiveViewController {
         XJAnimationTool.share.myBlock = { [unowned self] () -> () in
             self.backClick()
         }
-        
         
     }
 }
