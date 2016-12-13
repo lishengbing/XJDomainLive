@@ -4,11 +4,15 @@
 //
 //  Created by 李胜兵 on 2016/12/9.
 //  Copyright © 2016年 付公司. All rights reserved.
-//
+//  
+/*
+IJKMPMoviePlayerLoadStateDidChangeNotification(加载状态改变通知)
+IJKMPMoviePlayerPlaybackDidFinishNotification(播放结束通知)
+IJKMPMoviePlayerPlaybackStateDidChangeNotification(播放状态改变通知)
+*/
 
 import UIKit
 import IJKMediaFramework
-
 
 class LiveViewController: UIViewController {
 
@@ -28,12 +32,7 @@ class LiveViewController: UIViewController {
         self.topView.isHidden = true
         XJAnimationTool.share.showAnimation(view: self.view)
         
-        /*
-         IJKMPMoviePlayerLoadStateDidChangeNotification(加载状态改变通知)
-         IJKMPMoviePlayerPlaybackDidFinishNotification(播放结束通知)
-         IJKMPMoviePlayerPlaybackStateDidChangeNotification(播放状态改变通知)
-         */
-        NotificationCenter.default.addObserver(self, selector: #selector(playbackStateDidChange(noti:)), name: NSNotification.Name.IJKMPMoviePlayerPlaybackStateDidChange, object: nil)
+         NotificationCenter.default.addObserver(self, selector: #selector(playbackStateDidChange(noti:)), name: Notification.Name.IJKMPMoviePlayerLoadStateDidChange, object: nil)
         self.ijkLivePlay.prepareToPlay()
     }
     
@@ -97,9 +96,7 @@ extension LiveViewController {
             self.backClick()
         }
         
-        // 添加定时器
         XJAnimationTool.share.addCycleTimer()
-        
     }
 }
 
@@ -109,6 +106,7 @@ extension LiveViewController {
     }
     
     @objc fileprivate func playbackStateDidChange(noti : Notification) {
+        
         switch (self.ijkLivePlay.playbackState) {
         case .stopped:
             print("停止")

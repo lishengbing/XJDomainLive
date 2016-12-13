@@ -19,7 +19,6 @@ class LiveTopView: UIView {
                 return
             }
             var imageUrl = anchors.userInfo?.portrait
-            // 处理图片地址
             if imageUrl?.hasPrefix("http://img2.inke.cn/") == false {
                 imageUrl = "http://img2.inke.cn/" + (anchors.userInfo?.portrait)!
             }
@@ -31,12 +30,6 @@ class LiveTopView: UIView {
             }
         }
     }
-    
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-
 }
 
 extension LiveTopView {

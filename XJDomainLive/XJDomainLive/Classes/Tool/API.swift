@@ -7,6 +7,4 @@
 //
 
 import UIKit
-
-// MARK: - 首页主播列表
 let kApiHomeList = "http://116.211.167.106/api/live/aggregation?uid=133825214&interest=1"

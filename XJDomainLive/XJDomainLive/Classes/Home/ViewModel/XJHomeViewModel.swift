@@ -18,8 +18,6 @@ extension XJHomeViewModel {
     func loadData(_ finishedCallBack : @escaping() -> ()) {
         
         XJNetworkTool.requestData(.get, urlString: kApiHomeList) { (result, isSuccess) in
-            
-            // 获取结果
             let json = JSON(result)
             let dataArray = json["lives"]
             
@@ -27,13 +25,9 @@ extension XJHomeViewModel {
                 if let dict = dict.1.dictionaryObject {
                     let model = HomeModel(dict: dict)
                     self.anchors.append(model)
-                    //print(dict)
                 }
             }
             finishedCallBack()
-            if isSuccess {
-                
-            }
         }
     }
 }

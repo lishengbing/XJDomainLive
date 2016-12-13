@@ -14,5 +14,4 @@ class LiveTopCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
 }

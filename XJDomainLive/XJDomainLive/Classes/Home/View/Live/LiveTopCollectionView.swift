@@ -32,8 +32,6 @@ extension LiveTopCollectionView {
     fileprivate func setupUI() {
         dataSource = self
         delegate = self
-        //register(UINib(nibName: "LiveTopCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: KCellIdentifier)
-        //register(UICollectionViewCell.self, forCellWithReuseIdentifier: KCellIdentifier)
         register(UINib(nibName: "LiveTopCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: KCellIdentifier)
     }
 }
@@ -41,7 +39,7 @@ extension LiveTopCollectionView {
 extension LiveTopCollectionView : UICollectionViewDataSource, UICollectionViewDelegate{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        return 200
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
